@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 02</title>
+
+<style>
+    body{
+    background: linear-gradient(132deg,aliceblue,#bcc7c7)
+    }
+
+.dati_utente, .termini, .generi_musicali{
+    margin-bottom: 2em;
+}
+
+.dati_utente input{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-bottom: 0.3em;
+    width: 100%;
+    display: block;
+    
+}
+
+.form_index{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.generi_musicali input{
+    margin-bottom: 0.8em;
+}
+
+h2, h4{
+    margin-bottom: 0.3em;
+    margin-left: 0;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Ciao con questa pagina puoi registrarti all'app</h1>
+    </div>
+    <form onsubmit="alert('form inviato')" action="" class="form_index">
+        <div class="dati_utente">
+            <input type="text" placeholder="Nome" id="nome" name="nome">
+            <input type="text" placeholder="Cognome" id="cognome" name="cognome">
+            <input type="email" placeholder="Indirzzo email" id="email" name="email">
+            <input type="password" placeholder="Password" id="password" name="password">
+            <input type="date" id="birthday" name="birthday" placeholder="Data di nascita" >
+            <input type="tel" placeholder="Numero di telefono" minlength="9" maxlength="10" id="numero_telefono"  name="numero_telefono">
+        </div>
+        <div class="generi_musicali">
+            <h2>Generi musicali</h2>
+            <div>
+                <input type="checkbox" id="genere01" name="genere01" value="Rock">
+                <label for="genere01">Rock</label>          
+            </div>
+            <div>
+                <input type="checkbox" id="genere02" name="genere02" value="Metal">
+                <label for="genere02">Metal</label>
+            </div>
+            <div>
+                <input type="checkbox" id="genere03" name="genere03" value="Pop">
+                <label for="genere03">Pop</label>
+            </div>
+            <div>
+                <input type="checkbox" id="genere04" name="genere04" value="Classica">
+                <label for="genere04">Classica</label>      
+            </div>
+        </div>
+        <div class="termini">
+            <h4>Termini e condizioni accettate</h4>
+            <input type="radio" id="yes" name="accettato" value="HTML">
+            <label for="yes">SI</label>
+            <input type="radio" id="no" name="accettato" value="HTML">
+            <label for="no">NO</label>
+        </div>
+        <button type="submit">INVIA FORM</button>
+    </form>
+</body>
+</html>
